@@ -7,7 +7,7 @@ const newDict = {};
 for (const userId in dict) {
   const occurrences = dict[userId];
 
-  if (!newDict[occurrences]) {
+  if (newDict[occurrences] === undefined) {
     newDict[occurrences] = [];
   }
 
